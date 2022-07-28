@@ -19,3 +19,19 @@ p{
 .light{
 font-family: "Rubik-Light";
 }
+
+.pricing-item li{
+display: -webkit-inline-box;
+position: relative;
+}
+.pricing-item li::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('img/icons/coche.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -1.5rem;
+}
