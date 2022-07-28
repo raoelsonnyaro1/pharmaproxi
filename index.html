@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    </head>
+
+
+    <body>
+        <header>
+            <nav class="bg-gray-200 border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+                <div class="container flex flex-wrap justify-between items-center mx-auto">
+                    <a href="" class="flex items-center">
+                        <img src="img/logo-color.png" class="mr-3 h-6 sm:h-9" alt="Pharmaproxi Logo">
+                    </a>
+                    <div class="flex items-center md:order-2 relative">
+                        <!-- <button type="button"
+                            class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                            id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                            data-dropdown-placement="bottom">
+                            <span class="sr-only">Open user menu</span>
+                            <img class="w-8 h-8 rounded-full" src="img/user.jpg" alt="user photo">
+                        </button> -->
+                        <!-- Dropdown menu -->
+                        <!-- <div class="z-50 my-4 text-base list-none bg-gray-300 rounded divide-y divide-gray-100 shadow  block"
+                            id="user-dropdown" data-popper-reference-hidden="" data-popper-escaped=""
+                            data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0, 44px);">
+                            <div class="py-3 px-4">
+                                <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+                                <span
+                                    class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+                            </div>
+                            <ul class="py-1" aria-labelledby="user-menu-button">
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-4 text-sm text-black-700 hover:bg-gray-100 ">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <button data-collapse-toggle="mobile-menu-2" type="button"
+                            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            aria-controls="mobile-menu-2" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <button type="button" class="text-emerald-500 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-white focus:ring-4
+                            focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0">Se connecter</button>
+
+
+                    </div>
+                    <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+                        id="mobile-menu-2">
+                        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white"
+                                    aria-current="page">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50
+                                    md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Nos
+                                    solutions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50
+                                    md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Tarifs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50
+                                    md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Qui
+                                    sommes-nous</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50
+                                    md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section style="background-image: url(https://medic.mhrtheme.com/wp-content/uploads/2021/11/banner-bg.jpg)">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap items-center h-screen">
+                    <div class="w-6/12 space-y-6 ">
+                        <h2 class="text-5xl font-bold text-slate-900">Notre métier ? Vous
+                            ramenez du Traffic dans
+                            votre pharmacie et gérer
+                            les avis & commentaires.</h2>
+
+                        <p>
+                            Concentrez vous sur votre métier, le notre c’est de vous
+                            envoyer des prospects qualifiés et de gérer les avis de vos
+                            clients sur google.
+                        </p>
+                        <div class="flex space-x-6">
+                            <button type="button" class="text-white border-2 bg-emerald-500 border-emerald-500 focus:ring-4
+                            focus:outline-none focus:ring-emerald-500 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0">Etes vous visible ?
+                            </button>
+                            <button type="button" class="text-white bg-slate-900 border-2 border-slate-900
+                                focus:ring-4
+                            focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0">Devenir client
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-6/12">test</div>
+                </div>
+            </div>
+        </section>
+        <section class="h-screen ">
+            <div class="container mx-auto space-y-6 py-12">
+                <div class="text-center">
+                    <h2 class="text-3xl capitalize">Le saviez-vous?</h2>
+                    <h3>65 % des consommateurs consultent les avis GOOGLE avant de se rendre dans une pharmacie ?</h3>
+                    <p>Augmentez jusqu’à 25 % le trafic dans votre pharmacie
+                        avec pharmaproxi.</p>
+                </div>
+                <div class="grid grid-cols-3 gap-24">
+                    <div class="grid-item space-y-4">
+                        <h6>
+                            Visibilité
+                        </h6>
+                        <p>Nous veillons à optimiser votre fiche
+                            d’établissement google afin de basculer
+                            dans les premiers résultats sur les
+                            demandes faites par les consommateurs
+                            lorsqu’ils recherchent une pharmacie ou
+                            encore un médicament à acheter autour
+                            de votre secteur.</p>
+                    </div>
+                    <div class="grid-item space-y-4">
+                        <h6>
+                            Gestion des avis & commentaires
+                        </h6>
+                        <p>Vos avis & commentaires sont gérés par
+                            nos équipes afin de pouvoir répondre à
+                            un commentaire qu’il soit positif ou
+                            négatif.</p>
+                    </div>
+                    <div class="grid-item space-y-4">
+                        <h6>
+                            Satisfait ou remboursé
+                        </h6>
+                        <p>les premiers résultats sont visibles dès
+                            le deuxième mois. Si les résultats ne se
+                            font pas ressentir sur les statistiques
+                            GOOGLE nous vous remboursons !</p>
+                    </div>
+                </div>
+                <div>
+                    <p>Tarifs pour une entreprise de 1 pharmacie(s)</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-slate-200 h-screen flex items-center">
+            <div class="max-w-5xl mx-auto text-center py-12">
+                <div class="flex items-center p-6">
+                    <div class="pricing-item  text-left  ">
+                        <div class="bg-white px-12 py-6 space-y-4">
+                            <div class="price-header text-center space-y-6 text-gray-600">
+                                <h4 class="text-3xl">Visibilité standard</h4>
+                                <p>Le minimum pour la gestion de
+                                    votre visibilité</p>
+                                <h6 class="text-5xl font-bold price-value">15 € </h6>ht/ mois
+                                <p>+ 30 € HT si création de la fiche google</p>
+                            </div>
+
+                            <button type="button" class="text-emerald-500 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-white focus:ring-4
+                            focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0 w-full">SOUSCRIRE
+                            </button>
+                            <div class="price-content light ">
+                                <p>Inclus dans l’offre :</p>
+                                <ul>
+                                    <li>Optimisation de la fiche
+                                        d’établissement Google</li>
+                                    <li>Gestion des informations de votre
+                                        entreprise</li>
+                                    <li>Statistiques mensuelles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item space-y-6 text-left bg-emerald-500 px-12 py-14 relative text-white">
+                        <div class="price-header text-center space-y-4">
+                            <span class="absolute mx-auto top-0 left-0 w-full py-3">Le plus populaire</span>
+                            <h4 class="text-3xl">Visibilité standard</h4>
+                            <p>Le minimum pour la gestion de
+                                votre visibilité</p>
+                            <h6 class="text-5xl font-bold price-value">15 € </h6>ht/ mois
+                            <p>+ 30 € HT si création de la fiche google</p>
+                        </div>
+
+                        <button type="button" class="text-white border-2 border-white hover:bg-emerald-500 hover:text-white focus:ring-4
+                            focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0 w-full">SOUSCRIRE
+                        </button>
+                        <div class="price-content light">
+                            <p>Inclus dans l’offre :</p>
+                            <ul>
+                                <li>Optimisation de la fiche
+                                    d’établissement Google</li>
+                                <li>Gestion des informations de votre
+                                    entreprise</li>
+                                <li>Statistiques mensuelles</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pricing-item  text-left">
+                        <div class="bg-white px-12 py-6 space-y-4">
+                            <div class="price-header text-center space-y-6 text-gray-600">
+                                <h4 class=" text-3xl">Visibilité standard</h4>
+                                <p>Le minimum pour la gestion de
+                                    votre visibilité</p>
+                                <h6 class="text-5xl font-bold price-value">15 € </h6>ht/ mois
+                                <p>+ 30 € HT si création de la fiche google</p>
+                            </div>
+
+                            <button type="button" class="text-emerald-500 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-white focus:ring-4
+                            focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0 w-full">SOUSCRIRE
+                            </button>
+                            <div class="price-content light">
+                                <p>Inclus dans l’offre :</p>
+                                <ul>
+                                    <li>Optimisation de la fiche
+                                        d’établissement Google</li>
+                                    <li>Gestion des informations de votre
+                                        entreprise</li>
+                                    <li>Statistiques mensuelles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="container mx-auto text-center py-12">
+                <h2>QUI SOMMES-NOUS</h2>
+                <div class="flex flex-wrap items-center">
+                    <div class="w-6/12 space-y-6 ">
+                        <h3 class="text-4xl font-bold">TOUT OU RIEN</h3>
+
+                        <p>
+                            Chez Pharmaproxi, une petite, mais dynamique entreprise spécialiste du
+                            digital local, nous sommes tous animés par la même passion :
+                            GOOGLE.
+                            Nous maitrisons depuis des années les techniques d’optimisation pour
+                            que les entreprises puissent apparaitre dans les premiers résultats de
+                            recherche.
+                            Notre force ? Faire beaucoup avec peu.
+                            et oui chez pharmaproxi on ne vous vendra pas un site internet à 3000
+                            euros !
+                            A vrai dire il y a en pas besoin ☺
+                            Ah oui dernière chose. Si nous vous ramenons pas plus de monde dans
+                            votre pharmacie, c’est simple on vous rembourse !
+                        </p>
+                    </div>
+                    <div class="w-6/12">test</div>
+                </div>
+
+                <button type="button" class="text-emerald-500 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-white focus:ring-4
+                            focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0 mx-auto">Demander une démo
+                </button>
+
+
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto space-y-6 text-center py-12">
+
+                <h2>NOTRE BLOG</h2>
+
+                <div class="grid grid-cols-3 gap-24">
+                    <div class="grid-item space-y-2 text-left">
+                        <div class="blog-image h-60">
+                            <img class="object-cover w-full h-full" src="img/user.jpg" alt="">
+                        </div>
+                        <h6>
+                            Visibilité
+                        </h6>
+                        <div class="flex space-x-6 text-gray-300">
+                            <span class="date">Oct 19,2016</span>
+                            <span class="author">Admin</span>
+                        </div>
+                        <p class="text-justify">Nous veillons à optimiser votre fiche
+                            d’établissement google afin de basculer
+                            dans les premiers résultats sur les
+                            demandes faites par les consommateurs
+                            lorsqu’ils recherchent une pharmacie ou
+                            encore un médicament à acheter autour
+                            de votre secteur.</p>
+                    </div>
+                    <div class="grid-item space-y-2 text-left">
+                        <div class="blog-image h-60">
+                            <img class="object-cover w-full h-full" src="img/user.jpg" alt="">
+                        </div>
+                        <h6>
+                            Visibilité
+                        </h6>
+                        <div class="flex space-x-6 text-gray-300">
+                            <span class="date">Oct 19,2016</span>
+                            <span class="author">Admin</span>
+                        </div>
+                        <p class="text-justify">Nous veillons à optimiser votre fiche
+                            d’établissement google afin de basculer
+                            dans les premiers résultats sur les
+                            demandes faites par les consommateurs
+                            lorsqu’ils recherchent une pharmacie ou
+                            encore un médicament à acheter autour
+                            de votre secteur.</p>
+                    </div>
+                    <div class="grid-item space-y-2 text-left">
+                        <div class="blog-image h-60">
+                            <img class="object-cover w-full h-full" src="img/user.jpg" alt="">
+                        </div>
+                        <h6>
+                            Visibilité
+                        </h6>
+                        <div class="flex space-x-6 text-gray-300">
+                            <span class="date">Oct 19,2016</span>
+                            <span class="author">Admin</span>
+                        </div>
+                        <p class="text-justify">Nous veillons à optimiser votre fiche
+                            d’établissement google afin de basculer
+                            dans les premiers résultats sur les
+                            demandes faites par les consommateurs
+                            lorsqu’ils recherchent une pharmacie ou
+                            encore un médicament à acheter autour
+                            de votre secteur.</p>
+                    </div>
+                </div>
+                <button type="button" class="text-emerald-500 border-2 border-emerald-500 hover:bg-emerald-500 hover:text-white focus:ring-4
+                            focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5
+                            text-center mr-3 md:mr-0 mx-auto">Voir tout nos articles
+                </button>
+            </div>
+        </section>
+        <footer class="bg-gray-800 py-12">
+            <div class="container mx-auto">
+                <div class="flex justify-between text-white">
+                    <div class="w-3/12">
+                        <ul class="social-icon">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="" class="flex items-center">
+                            <img src="img/logo-white.png" class="mr-3 h-6 sm:h-9" alt="Pharmaproxi Logo">
+                        </a>
+                        <p>les premiers résultats sont visibles dès
+                            le deuxième mois. Si les résultats ne se
+                            font pas ressentir sur les statistiques
+                            GOOGLE nous vous remboursons !</p>
+                    </div>
+                    <div class="text-right">
+                        <ul>
+                            <li>Mon compte Pharmaproxi</li>
+                            <li>Confidentialité et Sécurité</li>
+                            <li>Conditions d’utilisation</li>
+                            <li>Politique de protection des données personnelles</li>
+                            <li>Politique de cookies</li>
+                            <li>Mes préférences de cookies</li>
+                            <li>Mentions légales</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+    </body>
+
+</html>
