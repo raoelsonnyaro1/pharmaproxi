@@ -1,31 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 @font-face {
- font-family: "Rubik-Light";
- src: url("fonts/Rubik-Light.ttf");
+    font-family: "Rubik-Light";
+    src: url("fonts/Rubik-Light.ttf");
 }
-body{
+
+body {
     color: rgb(71, 77, 80);
     font-family: 'Rubik';
 }
 
-h2,.price-value{
+h2,
+.price-value {
     font-family: Poppins;
 }
 
-p{
+p {
     font-family: "Rubik-Light";
 }
 
 
-.light{
-font-family: "Rubik-Light";
+.light {
+    font-family: "Rubik-Light";
 }
 
-.pricing-item li{
-display: -webkit-inline-box;
-position: relative;
+.pricing-item li {
+    display: -webkit-inline-box;
+    position: relative;
 }
-.pricing-item li::before{
+
+.pricing-item li::before {
     content: '';
     display: block;
     position: absolute;
@@ -35,4 +39,19 @@ position: relative;
     background-repeat: no-repeat;
     background-size: contain;
     left: -1.5rem;
+}
+
+.title::after {
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: rgb(16 185 129);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .7rem;
 }
