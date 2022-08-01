@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/owl.carousel.min.css">
 </head>
 
 
@@ -15,9 +16,12 @@
         <div class="top-header bg-gray-200 py-2.5">
             <div class="container flex flex-wrap justify-between items-center mx-auto text-sm">
                 <span>bonjour@pharmaproxi.fr</span>
-                <div class="flex">
+                <div class="flex items-center">
                     <p>Prenez un rendez-vous pour avoir un audit gratuit de votre visibilité</p>
-                    <a href="tel:(+33) 06 46 78 31 23"><i></i>(+33) 06 46 78 31 23</a>
+                    <a class="flex items-center" href="tel:(+33) 06 46 78 31 23">
+                        <i class="mx-2"><img class="w-6" src="img/icons/phone-cal-green2.png" alt=""></i>(+33) 06 46 78
+                        31 23
+                    </a>
                 </div>
 
             </div>
@@ -327,12 +331,11 @@
 
         </div>
     </section>
-    <section class="bg-slate-100">
-        <div class="container mx-auto space-y-16 text-center py-12">
+    <section class="bg-gray-100">
+        <div class="max-w-5xl mx-auto space-y-16 text-center py-12">
             <h2 class="title text-3xl capitalize text-emerald-500">NOTRE BLOG</h2>
-
-            <div class="grid grid-cols-3 gap-24">
-                <div class="grid-item space-y-2 text-left shadow-md bg-white rounded-xl">
+            <div class="article-carousel owl-carousel owl-theme">
+                <div class="grid-item space-y-2 text-left  bg-white rounded-xl">
                     <div class="blog-image h-60">
                         <img class="object-cover w-full h-full" src="img/user.jpg" alt="">
                     </div>
@@ -354,7 +357,7 @@
                     </div>
 
                 </div>
-                <div class="grid-item space-y-2 text-left shadow-md bg-white rounded-xl">
+                <div class="grid-item space-y-2 text-left bg-white rounded-xl">
                     <div class="blog-image h-60">
                         <img class="object-cover w-full h-full" src="img/user.jpg" alt="">
                     </div>
@@ -373,10 +376,10 @@
                             lorsqu’ils recherchent une pharmacie ou
                             encore un médicament à acheter autour
                             de votre secteur.</p>
-                        <a class="text-emerald-500 text-md" href="">Voir plus</a>
                     </div>
+
                 </div>
-                <div class="grid-item space-y-2 text-left shadow-md bg-white rounded-xl">
+                <div class="grid-item space-y-2 text-left bg-white rounded-xl">
                     <div class="blog-image h-60">
                         <img class="object-cover w-full h-full" src="img/user.jpg" alt="">
                     </div>
@@ -396,6 +399,29 @@
                             encore un médicament à acheter autour
                             de votre secteur.</p>
                     </div>
+
+                </div>
+                <div class="grid-item space-y-2 text-left bg-white rounded-xl">
+                    <div class="blog-image h-60">
+                        <img class="object-cover w-full h-full" src="img/user.jpg" alt="">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h6>
+                            Visibilité
+                        </h6>
+                        <div class="flex space-x-6 text-gray-300 text-sm">
+                            <span class="date">Oct 19,2016</span>
+                            <span class="author">Admin</span>
+                        </div>
+                        <p class="text-justify">Nous veillons à optimiser votre fiche
+                            d’établissement google afin de basculer
+                            dans les premiers résultats sur les
+                            demandes faites par les consommateurs
+                            lorsqu’ils recherchent une pharmacie ou
+                            encore un médicament à acheter autour
+                            de votre secteur.</p>
+                    </div>
+
                 </div>
             </div>
             <button type="button" class="text-white border-2 bg-emerald-500 border-emerald-500 focus:ring-4
@@ -408,12 +434,11 @@
         <div class="container mx-auto">
             <div class="flex justify-between text-white">
                 <div class="w-3/12 text-sm space-y-4">
-                    <ul class="social-icon">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="social-icon inline-flex space-x-2">
+                        <li><a href="#"><i><img class="w-6" src="img/icons/facebook-green.png" alt=""></i></a></li>
+                        <li><a href=""><i><img class="w-6" src="img/icons/twitter-GREEN.png" alt=""></i></a></li>
                     </ul>
-                    <a href="" class="flex items-center">
+                    <a href="#" class="flex items-center">
                         <img src="img/logo-white.png" class="mr-3 h-6 sm:h-9" alt="Pharmaproxi Logo">
                     </a>
                     <p>Les premiers résultats sont visibles dès
@@ -422,7 +447,7 @@
                         GOOGLE nous vous remboursons !</p>
                 </div>
                 <div class="text-right text-sm">
-                    <ul>
+                    <ul class="footer-link">
                         <li><a href="">Mon compte Pharmaproxi</a></li>
                         <li><a href="">Confidentialité et Sécurité</a></li>
                         <li><a href="">Conditions d’utilisation</a></li>
@@ -437,6 +462,10 @@
         </div>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

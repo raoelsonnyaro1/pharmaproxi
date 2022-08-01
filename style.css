@@ -8,6 +8,7 @@
 body {
     color: rgb(71, 77, 80);
     font-family: 'Rubik';
+    font-size: 15px;
 }
 
 h2,
@@ -27,6 +28,20 @@ p {
 .pricing-item li {
     display: -webkit-inline-box;
     position: relative;
+}
+
+i,
+img,
+a {
+    transition: 300ms all ease;
+}
+
+a:hover i {
+    transform: translateY(-0.2rem);
+}
+
+.social-icon i img:hover {
+    transform: translateY(-0.2rem);
 }
 
 .pricing-item li::before {
@@ -54,4 +69,64 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-top: .7rem;
+}
+
+footer a {
+    display: block;
+}
+
+.footer-link a:hover {
+    color: rgb(16 185 129);
+    transform: translateX(.2rem);
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-nav button.owl-next {
+    right: 0;
+}
+
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.owl-carousel .owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: rgb(16 185 129)
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+
+
+.owl-nav button:focus {
+    outline: none;
 }
