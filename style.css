@@ -40,10 +40,60 @@ a:hover i {
     transform: translateY(-0.2rem);
 }
 
+button{
+    font-size: 16px;
+    color: #ffffff;
+    padding: 15px 30px;
+    line-height: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #19ce67;
+    margin-bottom: -6px;
+    font-weight: 500;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #122738;
+    z-index: -1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+button.bg-slate-900::before{
+    background-color: rgb(16 185 129);
+}
+
+button:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
 .social-icon i img:hover {
     transform: translateY(-0.2rem);
 }
 
+#saviez-vous-grid .grid-item{
+    transition: 300ms all ease;
+}
+
+#saviez-vous-grid .grid-item:hover{
+    transform: translateY(-0.5rem);
+}
 .pricing-item li::before {
     content: '';
     display: block;
