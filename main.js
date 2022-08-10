@@ -19,4 +19,14 @@ $(document).ready(function () {
       },
     },
   });
+  $(".saviez-vous-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    dots: true,
+  });
+  $(".pricing-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    dots: true,
+  });
 });

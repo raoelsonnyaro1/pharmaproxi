@@ -40,6 +40,28 @@ a:hover i {
     transform: translateY(-0.2rem);
 }
 
+ul{
+    display: inline-grid;
+}
+
+@media(min-width:769px){
+.big-image img{
+    max-width: 300px;
+}
+.big-image{
+    height:500px
+}
+}
+@media(max-width:769px){
+.big-image img{
+    max-width: 200px;
+}
+.big-image{
+    height:400px
+}
+}
+
+
 button{
     font-size: 16px;
     color: #ffffff;
